@@ -134,7 +134,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     // Insert the new portfolio into the database
     $stmt = $pdo->prepare("INSERT INTO portfolios 
-        (title, text, sText, category, client, date, link, image , image2 , image3) 
+        (title, sText, text,  category, client, date, link, image , image2 , image3) 
         VALUES (?, ?, ?, ?, ?, ? ,? , ? ,? , ?)");
 
     $stmt->execute([
