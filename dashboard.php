@@ -37,6 +37,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
                 <li class="list-group-item"><strong>City:</strong> <?= htmlspecialchars($user['city']); ?></li>
             </ul>
             <a href="edit_user.php?id=1" class="btn btn-primary mt-3">Edit Profile</a>
+            <a href="add_portfolio.php" class="btn btn-success mt-3">Add Portfolio</a>
         </div>
     </div>
 

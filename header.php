@@ -48,7 +48,7 @@ $current_page = basename($_SERVER['PHP_SELF']); // This gets the current page fi
       <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Personal</h1>
+        <h1 class="sitename">Noel</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -56,7 +56,8 @@ $current_page = basename($_SERVER['PHP_SELF']); // This gets the current page fi
         <li><a href="index.php" class="<?= $current_page == 'index.php' ? 'active' : '' ?>">Home</a></li>
         <li><a href="about.php" class="<?= $current_page == 'about.php' ? 'active' : '' ?>">About</a></li>
         <li><a href="resume.php" class="<?= $current_page == 'resume.php' ? 'active' : '' ?>">Resume</a></li>
-        <li><a href="contact.php" class="<?= $current_page == 'contact.php' ? 'active' : '' ?>">Contact</a></li>
+            <li><a href="portfolio.php" class="<?= $current_page == 'portfolio.php' ? 'active' : '' ?>"Portfolio</a></li>
+            <li><a href="contact.php" class="<?= $current_page == 'contact.php' ? 'active' : '' ?>">Contact</a></li>
 
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>

@@ -20,7 +20,7 @@ include 'header.php'; // Include the header
 
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h2><?= htmlspecialchars($user['name'] ?? 'Default Name') ?></h2>
-      <p>I'm a <span class="typed" data-typed-items="<?= htmlspecialchars($user['s_title'] ?? 'Designer, Developer, Freelancer, Photographer') ?>"><?= htmlspecialchars($user['s_title'] ?? 'Photographer') ?></span><span class="typed-cursor typed-cursor--blink"></span></p>
+        <p>I'm <span class="typed" data-typed-items="Designer, Freelancer">Full Stack Developer</span><span class="typed-cursor typed-cursor--blink"></span></p>
       <div class="social-links">
       <a href="https://t.me/Nbekele" target="_blank"><i class="bi bi-telegram"></i></a>
       <a href="https://www.linkedin.com/in/noel-bekele-0a0193205/" target="_blank"><i class="bi bi-linkedin"></i></a>

@@ -11,7 +11,7 @@ $user = $userQuery->fetch(PDO::FETCH_ASSOC);
 
 <footer id="footer" class="footer dark-background">
     <div class="container">
-      <h3 class="sitename">Personal</h3>
+      <h3 class="sitename">Noel</h3>
       <p><?= htmlspecialchars($user['l_title']); ?></p>
       <div class="social-links d-flex justify-content-center">
         <a href="https://t.me/Nbekele" target="_blank"><i class="bi bi-telegram"></i></a>

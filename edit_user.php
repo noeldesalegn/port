@@ -35,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         phone = ?, 
         age = ? 
         WHERE id = 1");
+
     $stmt->execute([
         $name, 
         $email, 
