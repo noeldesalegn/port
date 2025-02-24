@@ -8,13 +8,13 @@ $current_page = basename($_SERVER['PHP_SELF']); // This gets the current page fi
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Personal Bootstrap Template</title>
+  <title>Noel Portfolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/noel%20logo.png" rel="icon">
+  <link href="assets/img/noel%20logo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -56,8 +56,8 @@ $current_page = basename($_SERVER['PHP_SELF']); // This gets the current page fi
         <li><a href="index.php" class="<?= $current_page == 'index.php' ? 'active' : '' ?>">Home</a></li>
         <li><a href="about.php" class="<?= $current_page == 'about.php' ? 'active' : '' ?>">About</a></li>
         <li><a href="resume.php" class="<?= $current_page == 'resume.php' ? 'active' : '' ?>">Resume</a></li>
-            <li><a href="portfolio.php" class="<?= $current_page == 'portfolio.php' ? 'active' : '' ?>"Portfolio</a></li>
-            <li><a href="contact.php" class="<?= $current_page == 'contact.php' ? 'active' : '' ?>">Contact</a></li>
+        <li><a href="portfolio.php" class="<?= $current_page == 'portfolio.php' ? 'active' : '' ?>"Portfolio</a></li>
+        <li><a href="contact.php" class="<?= $current_page == 'contact.php' ? 'active' : '' ?>">Contact</a></li>
 
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>

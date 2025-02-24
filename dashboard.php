@@ -38,6 +38,8 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
             </ul>
             <a href="edit_user.php?id=1" class="btn btn-primary mt-3">Edit Profile</a>
             <a href="add_portfolio.php" class="btn btn-success mt-3">Add Portfolio</a>
+            <a href="portfolios.php" class="btn btn-warning mt-3">Edit Portfolio</a>
+
         </div>
     </div>
 
