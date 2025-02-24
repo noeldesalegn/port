@@ -44,7 +44,7 @@ if (!empty($portfolio['image3'])) {
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-lg-8">
                         <h1><?= htmlspecialchars($portfolio['title']); ?></h1>
-                        <p class="mb-0"><?= htmlspecialchars($portfolio['text']); ?></p>
+                        <p class="mb-0"><?= htmlspecialchars($portfolio['sText']); ?></p>
                     </div>
                 </div>
             </div>

@@ -11,6 +11,7 @@ if (!isset($_SESSION['admin_id'])) {
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // add user's portfolio
     $title = $_POST['title'];
+    $sText = $_POST['sText'];
     $text = $_POST['text'];
     $category = $_POST['category'];
     $client = $_POST['client'];
@@ -133,11 +134,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     // Insert the new portfolio into the database
     $stmt = $pdo->prepare("INSERT INTO portfolios 
-        (title, text, category, client, date, link, image , image2 , image3) 
-        VALUES (?, ?, ?, ?, ?, ? ,? , ? ,?)");
+        (title, text, sText, category, client, date, link, image , image2 , image3) 
+        VALUES (?, ?, ?, ?, ?, ? ,? , ? ,? , ?)");
 
     $stmt->execute([
         $title,
+        $sText,
         $text,
         $category,
         $client,
@@ -177,6 +179,10 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
                 <div class="mb-3">
                     <label for="title" class="form-label">Portfolio Title</label>
                     <input type="text" id="title" name="title" class="form-control" placeholder="Enter portfolio title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="sText" class="form-label">short Text</label>
+                    <textarea id="sText" name="sText" class="form-control" placeholder="Enter portfolio short text" required></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="text" class="form-label">Text</label>
