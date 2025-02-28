@@ -12,6 +12,9 @@
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
+  document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+    document.querySelector('#navmenu').classList.toggle('active');
+  });
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
